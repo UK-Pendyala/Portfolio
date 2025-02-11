@@ -48,7 +48,3 @@ jobs:
         key: ${{ secrets.AWS_PRIVATE_KEY }}
         script: |
           sudo systemctl restart nginx
-
-    listen 80;
-    server_name dev.speedscore.org;
-    return 404; # managed by Certbot
