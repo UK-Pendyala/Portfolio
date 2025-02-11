@@ -28,7 +28,11 @@ jobs:
       run: |
         echo "REACT_APP_ENV=${{ secrets.REACT_APP_ENV }}" > .env
         CI=false npm run build
-
+      
+    - name: Debug Dist Directory
+      run: |
+        ls -lah dist/ || echo "⚠️ dist directory does not exist!"
+        
     - name: Deploy to AWS EC2
       uses: appleboy/scp-action@v0.1.4
       with:
