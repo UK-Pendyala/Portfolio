@@ -54,9 +54,7 @@ jobs:
         target: "/var/www/react-app"
         strip_components: 1
         debug: true
-        script_after: |
-          sudo chown -R $USER:$USER /var/www/react-app
-          sudo chmod -R 755 /var/www/react-app
+
         # rm: true
 
     - name: Restart Server
