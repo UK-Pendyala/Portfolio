@@ -33,6 +33,17 @@ jobs:
       run: |
         ls -lah dist/ || echo "⚠️ dist directory does not exist!"
 
+    - name: Ensure Target Directory Exists
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.AWS_EC2_HOST }}
+        username: ${{ secrets.AWS_EC2_USER }}
+        key: ${{ secrets.AWS_PRIVATE_KEY }}
+        script: |
+          sudo mkdir -p /var/www/react-app
+          sudo chown -R $USER:$USER /var/www/react-app
+          sudo chmod -R 755 /var/www/react-app
+
     - name: Deploy to AWS EC2
       uses: appleboy/scp-action@v0.1.4
       with:
@@ -43,6 +54,9 @@ jobs:
         target: "/var/www/react-app"
         strip_components: 1
         debug: true
+        script_after: |
+          sudo chown -R $USER:$USER /var/www/react-app
+          sudo chmod -R 755 /var/www/react-app
         # rm: true
 
     - name: Restart Server
