@@ -23,6 +23,23 @@ import {
   jobit,
   tripguide,
   threejs,
+
+  gta,
+  gta2,
+  gtaen,
+  gpa,
+  it,
+  sd,
+  intern,
+  aws,
+  aws2,
+  psql,
+  python,
+  Angular,
+  Java,
+  project01,
+  chatbook,
+  protomix
 } from "../assets";
 
 export const navLinks = [
@@ -46,15 +63,15 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Backend Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "System Design & CI/CD",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Machine Learning & AI Developer",
     icon: creator,
   },
 ];
@@ -73,8 +90,8 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "AWS",
+    icon: aws2,
   },
   {
     name: "React JS",
@@ -85,8 +102,8 @@ const technologies = [
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "PL/SQL",
+    icon: psql,
   },
   {
     name: "Node JS",
@@ -97,74 +114,83 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Python",
+    icon: python,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Angular",
+    icon: Angular,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Java",
+    icon: Java,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Graduate Teaching Assistant",
+    company_name: "Oregon State University - Part time",
+    icon: gtaen,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "January 2025 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Assisting students with Kotlin concepts and Android development queries.",
+      "Conducting office hours to provide guidance on coursework and projects.",
+      "Assessing assignments and providing constructive feedback.",
+      "Writing detailed notes to help students understand key topics.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Graduate Project Assistant / Scrum Master",
+    company_name: "Oregon State University - Part time",
+    icon: gpa,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Jan 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Migrated the SpeedScore app to React and Redux, improving scalability and UI responsiveness.",
+      "Developed optimized Express.js APIs with <1s response time, supporting ~5000 users",
+      "Served as Scrum Master, leading a team of 5 developers and facilitating agile workflows.",
+      "Worked on AWS technologies such as EC2, S3 and CI/CD pipelines for deployment.",
+    ],
+  },
+  {
+    title: "Graduate School IT programmer",
+    company_name: "Oregon State University - Part time",
+    icon: it,
+    iconBg: "#E6DEDD",
+    date: "Jan 2024 - Dec 2024",
+    points: [
+      "Developed and enhanced the Graduate School website using Salesforce Lightning and Aura components for better user experience.",
+      "Built and optimized the Program of Study form, integrating CSS, Apex, and JavaScript to improve functionality and data handling.",
+    ],
+  },
+  {
+    title: "Software Developer",
+    company_name: "Teletext Holidays - Full time",
+    icon: sd,
+    iconBg: "#E6DEDD",
+    date: "May 2022 - September 2023",
+    points: [
+      "Worked on major airline integrations with Iberia Airways and Amadeus, streamlining passenger journey management for the Oneworld Alliance",
+      "Developed mission-critical APIs using Node.js, Express.js, PostgreSQL, and DynamoDB, ",
+      "Engineered a scalable backend system that can process 10,000+ passenger records daily",
+      "Leveraged AWS services such as Elastic Beanstalk (EB), Lambda, API Gateway, Cloud Watch with CI/CD and Cloud Formation for scalable deployment and managing economics at scale",
+    ],
+  },
+  {
+    title: "Intern Software Engineer",
+    company_name: "Virtusa",
+    icon: intern,
+    iconBg: "#E6DEDD",
+    date: "July 2021 - Mar 2022",
+    points: [
+      "Developed an E-commerce platform using Angular, Spring Boot, and MySQL, focusing on performance and scalability",
+      "Collaborated with a cross-functional team to enhance backend services and UI components, improving user experience. ",
     ],
   },
 ];
@@ -172,9 +198,9 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
+      "Umakanth quickly became proficient in Salesforce development and contributed valuable insights to our projects. His dedication, problem-solving skills, and collaborative spirit made him an invaluable team member.",
+    name: "John McQueen",
+    designation: "Assistant Director",
     company: "Acme Co",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
@@ -198,9 +224,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "SpeedScore",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A MERN-based web platform designed for speedgolf enthusiasts to track rounds, analyze performance, and explore golf courses. Features interactive course maps and seamless authentication.",
     tags: [
       {
         name: "react",
@@ -211,38 +237,46 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Node.js",
         color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
       },
       {
         name: "restapi",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: project01,
+    source_code_link: "https://speedscore.org/",
+  },
+  {
+    name: "Chat Book",
+    description:
+      "A social media web app where users can create accounts, connect with others, and share posts. Features real-time interactions, allowing users to like and comment on posts.",
+    tags: [
+      {
+        name: "EJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AJAX",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Node.js",
         color: "pink-text-gradient",
       },
+      {
+        name: "mongodb",
+        color: "orange-text-gradient",
+      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: chatbook,
+    source_code_link: "https://github.com/umakanth-pendyala/CHAT-BOOK",
   },
   {
-    name: "Trip Guide",
+    name: "Amazon Clone",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A simple e-commerce platform where users can create accounts, browse products, add items to the cart, and manage their cart efficiently.",
     tags: [
       {
         name: "nextjs",
@@ -256,9 +290,13 @@ const projects = [
         name: "css",
         color: "pink-text-gradient",
       },
+      {
+        name: "mongodb",
+        color: "orange-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: protomix,
+    source_code_link: "https://github.com/umakanth-pendyala/ONLINE-SHOPPING",
   },
 ];
 
