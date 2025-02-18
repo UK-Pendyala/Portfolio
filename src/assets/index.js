@@ -33,10 +33,10 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
-import gta from './gta.png'
-import gta2 from './gta2.png'
-import gtaen from './gtaen.png'
-import gpa from './gpa.png'
+import gta from './GTA.png'
+import gta2 from './GTA2.png'
+import gtaen from './GTAen.png'
+import gpa from './GPA.png'
 import it from './it.png'
 import sd from './sd.png'
 import intern from './intern.png'
