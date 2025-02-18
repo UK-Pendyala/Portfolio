@@ -200,24 +200,24 @@ const testimonials = [
     testimonial:
       "Umakanth quickly became proficient in Salesforce development and contributed valuable insights to our projects. His dedication, problem-solving skills, and collaborative spirit made him an invaluable team member.",
     name: "John McQueen",
-    designation: "Assistant Director",
-    company: "Acme Co",
+    designation: "Assistant Director for IT Operations",
+    company: "Oregon State University",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "Umakanth showcased strong adaptability and dedication while working on a complex airline project. His ability to understand intricate industry details, contribute valuable insights, and collaborate effectively made him a dependable and respected team member.",
+    name: "james Lever",
+    designation: "Chief Technology Officer",
+    company: "ZEN3 UK Limited",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      "Umakanth proved to be a skilled and reliable Node.js developer, handling complex tasks with efficiency. His expertise in full-stack development, spanning Node.js, Java, and React.js, along with his strong grasp of system design, made him a valuable asset to the team.",
+    name: "Narendra Uppaluri",
+    designation: "Technical Architect",
+    company: "ZEN3 UK Limited",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
