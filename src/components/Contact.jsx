@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -70,62 +71,45 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <h3 className={styles.sectionHeadText}>Socials.</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
-        >
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
-            <input
-              type='text'
-              name='name'
-              value={form.name}
-              onChange={handleChange}
-              placeholder="What's your good name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
-            <input
-              type='email'
-              name='email'
-              value={form.email}
-              onChange={handleChange}
-              placeholder="What's your web address?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
-            <textarea
-              rows={7}
-              name='message'
-              value={form.message}
-              onChange={handleChange}
-              placeholder='What you want to say?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-
-          <button
-            type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+        <div className="mt-12 flex flex-col gap-6">
+          <a
+            href="https://www.linkedin.com/in/umakanth-pendyala-b276171a3/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-4 text-white text-lg font-medium hover:text-blue-400 transition"
           >
-            {loading ? "Sending..." : "Send"}
-          </button>
-        </form>
+            <FaLinkedin size={30} className="text-blue-500" />
+            LinkedIn
+          </a>
+
+          <a
+            href="https://github.com/umakanth-pendyala"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-4 text-white text-lg font-medium hover:text-gray-400 transition"
+          >
+            <FaGithub size={30} className="text-gray-300" />
+            GitHub
+          </a>
+
+          <a
+            href="mailto:pendyalu@oregonstate.edu"
+            className="flex items-center gap-4 text-white text-lg font-medium hover:text-red-400 transition"
+          >
+            <FaEnvelope size={30} className="text-red-500" />
+            pendyalu@oregonstate.edu
+          </a>
+        </div>
       </motion.div>
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
         <EarthCanvas />
       </motion.div>
