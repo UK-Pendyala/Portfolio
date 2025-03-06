@@ -279,7 +279,7 @@ const projects = [
       "A simple e-commerce platform where users can create accounts, browse products, add items to the cart, and manage their cart efficiently.",
     tags: [
       {
-        name: "nextjs",
+        name: "EJS",
         color: "blue-text-gradient",
       },
       {
