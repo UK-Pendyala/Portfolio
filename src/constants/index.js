@@ -283,7 +283,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "AJAX",
         color: "green-text-gradient",
       },
       {
